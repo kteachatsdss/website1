@@ -1,0 +1,159 @@
+/* ===== Base Reset ===== */
+* {
+  box-sizing: border-box;
+}
+
+body <div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="assignments.html">Assignments</a>
+  <a href="summative.html">Summative</a>
+</div>
+{
+  background: #f0f2f8;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #111;
+}
+
+/* ===== Navigation Bar ===== */
+.navbar {
+  background: white;
+  border: 1px solid #e6e6ee;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 16px;
+
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+
+.navbar a {
+  text-decoration: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  background: #e3f2ff;   /* light blue */
+  border: 1px solid #bcdcef;
+  color: #06436b;        /* dark blue text */
+}
+
+.navbar a:hover {
+  background: #cde7ff;
+}
+
+/* ===== Cards ===== */
+.card {
+  background: linear-gradient(to bottom, #ffffff, #f8fbff);
+  border: 1px solid #e6e6ee;
+  border-radius: 14px;
+  padding: 16px;
+  animation: fadeIn .35s ease;
+}
+
+.card h1 {
+  color: #0a2f66;
+}
+
+.card h2 {
+  color: #0b4a8c;
+}
+
+.card h3 {
+  color: #0d3a5f;
+}
+
+/* ===== Grid ===== */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ===== Buttons ===== */
+.btn {
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: 1px solid #a6c8ff;
+  background: #dbe7ff;
+  text-decoration: none;
+  color: #0a2f66;
+  animation: fadeIn .35s ease;
+}
+
+.btn:hover {
+  filter: brightness(1.05);
+}
+
+/* special colours for pages */
+.btn[href*="assignments"] {
+  background: #e8ffe4;   /* green */
+  color: #0a4f1a;
+  border: 1px solid #b6efbc;
+}
+
+.btn[href*="summative"] {
+  background: #fff3db;   /* yellow orange */
+  color: #6b4306;
+  border: 1px solid #efd8a6;
+}
+
+/* ===== Units Panel ===== */
+.units {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+@media (min-width: 700px) {
+  .units {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.unit {
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #dcdcef;
+  background: #ffe4f1;   /* pink */
+  color: #660a3a;
+  transition: transform .2s ease;
+  animation: fadeIn .35s ease;
+}
+
+.unit:hover {
+  transform: translateY(-2px);
+  background: #ffd6ea;
+}
+
+/* ===== Footer ===== */
+.footer {
+  background: #0b2f66;
+  color: white;
+  padding: 10px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+/* ===== Animation ===== */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+body {
+  background: #fff3b0;   /* soft yellow */
+}
+
+h1, h2, h3 {
+  color: red;            /* red title text */
+}
